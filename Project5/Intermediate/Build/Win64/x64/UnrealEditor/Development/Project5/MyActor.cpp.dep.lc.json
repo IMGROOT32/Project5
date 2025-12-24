@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\hw\\hw\\project5 ue\\project5\\project5\\project5\\source\\project5\\myactor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\hw\\hw\\project5 ue\\project5\\project5\\project5\\intermediate\\build\\win64\\x64\\project5editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\hw\\hw\\project5 ue\\project5\\project5\\project5\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\project5\\definitions.project5.h",
+            "c:\\hw\\hw\\project5 ue\\project5\\project5\\project5\\source\\project5\\myactor.h",
+            "c:\\hw\\hw\\project5 ue\\project5\\project5\\project5\\intermediate\\build\\win64\\unrealeditor\\inc\\project5\\uht\\myactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

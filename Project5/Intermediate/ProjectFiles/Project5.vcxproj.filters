@@ -11,6 +11,7 @@
     <None Include="..\..\Source\Project5Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -29,6 +30,12 @@
     <Filter Include="Source\Project5">
       <UniqueIdentifier>{F0C16364-4598-3C59-8941-13614C8AF257}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Project5\MyActor.cpp">
+      <Filter>Source\Project5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project5\MyActor.h">
+      <Filter>Source\Project5</Filter>
+    </ClCompile>
     <None Include="..\..\Source\Project5\Project5.Build.cs">
       <Filter>Source\Project5</Filter>
     </None>
