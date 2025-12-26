@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Project5-4072.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\Project5Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\MyActor.gen.cpp.obj"
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\Project5.init.gen.cpp.obj"
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\MyActor.cpp.obj"
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\Project5.cpp.obj"
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\PerModuleInline.gen.cpp.obj"
+"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\Default.rc2.res"
+/OUT:"C:\HW\HW\Project5 UE\Project5\Project5\Project5\Intermediate\Build\Win64\x64\UnrealEditor\Development\Project5\UnrealEditor-Project5-4072.lib"

@@ -23,7 +23,7 @@ private:
 	void Turn();
 	void Move();
 	float ElapsedTime = 0.0f;
-	int currentCount;
+	int CurrentCount=0;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

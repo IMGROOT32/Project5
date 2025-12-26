@@ -1,4 +1,5 @@
 #include "MyActor.h"
+#include "Engine/Engine.h"
 
 // Sets default values
 AMyActor::AMyActor()
@@ -16,7 +17,10 @@ void AMyActor::Turn()
 	int ranZ = FMath::RandRange(0, 360);
 	FRotator rotation(ranX, ranY, ranZ);
 	SetActorRotation(rotation);
-		
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, FString::Printf(TEXT("Rotation : %s"), *rotation.ToString()));
+	}
 }
 void AMyActor::Move()
 {
@@ -27,20 +31,22 @@ void AMyActor::Move()
 	SetActorLocation(location);
 	if (GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, FString::Printf(TEXT("Rotation : %s"), *location.ToString()));
+		GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, FString::Printf(TEXT("Location : %s"), *location.ToString()));
 	}
 }
 
 	void AMyActor::BeginPlay()
 	{
+		Super::BeginPlay();
 		if (GEngine)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, TEXT("HI"));
+			FVector location = GetActorLocation();
+			GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Blue, FString::Printf(TEXT("Location : %s"), *location.ToString()));
 		}
 
 		SetActorLocation(FVector(0, 50, 0));
 		ElapsedTime = 0.0f;
-		currentCount = 0;
+		CurrentCount = 0;
 	}
 
 
@@ -48,11 +54,18 @@ void AMyActor::Move()
 	void AMyActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (ElapsedTime >= 1.0f)
+	if (ElapsedTime >= 1.0f && CurrentCount<10)
 	{
 		Move();
 		Turn();
+		CurrentCount += 1;
 		ElapsedTime = 0.0f;
 	}
+		ElapsedTime += DeltaTime;
+		
+
+		
+		
+	
 }
 
